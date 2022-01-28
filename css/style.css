@@ -1,3 +1,89 @@
-html{
-    color: red;
+body, html{
+    height: 100%;
+    margin:0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight:400;
+    line-height: 1.8em;
+    color:#666;
+      
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#logo{
+    max-width: 50%;
+    margin-top: 350px;
+}
+
+.bgIMG1, .bgIMG2, .bgIMG3{
+    position:relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* fixed = parallax / scroll = norm*/
+
+}
+
+.ptext .border:hover{
+    background-color: rgb(0, 0, 0);
+    color: black;
+}
+
+.bgIMG1{
+    background-image:url("../media/firstBG.jpg");
+    min-height: 100%;
+    max-height: 100%;
+    text-align: center;
+}
+
+.bgIMG2{
+    background-image:url("../media/firstBG.jpg");
+    min-height: 400px;
+}
+
+.bgIMG3{
+    background-image:url("../media/firstBG.jpg");
+    min-height: 400px;
+}
+
+.section{
+    text-align: center;
+    padding:50px 80px;
+}
+
+.section-light{
+    background-color: #282e34;
+    color:#ddd;
+}
+
+.section-dark{
+    background-color: black;
+    color:white;
+}
+
+.ptext{
+    position: absolute;
+    top:50%;
+    width: 100%;
+    text-align: center;
+    color:#000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.ptext .border{
+    background-color: #111;
+    color:#fff;
+    padding: 20px;
+}
+
+@media(max-width:568px){
+    .bgIMG1, .bgIMG2, .bgIMG3{
+        background-attachment: scroll;
+    }
 }
