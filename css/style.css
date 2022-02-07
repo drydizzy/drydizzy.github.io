@@ -15,8 +15,8 @@ a{
 }
 
 #logo{
-    max-width: 50%;
-    margin-top: 350px;
+    max-width: 90%;
+    margin-top: 200px;
 }
 
 .bgIMG1, .bgIMG2, .bgIMG3{
@@ -41,12 +41,12 @@ a{
 }
 
 .bgIMG2{
-    background-image:url("../media/firstBG.jpg");
+    background-image:url("../media/trippyCro.png");
     min-height: 400px;
 }
 
 .bgIMG3{
-    background-image:url("../media/firstBG.jpg");
+    background-image:url("../media/videos.jpg");
     min-height: 400px;
 }
 
@@ -56,8 +56,8 @@ a{
 }
 
 .section-light{
-    background-color: #282e34;
-    color:#ddd;
+    background-color: black;
+    color:white;
 }
 
 .section-dark{
