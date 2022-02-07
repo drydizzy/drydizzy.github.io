@@ -5,6 +5,18 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">×</a>
+        <a href="#">About</a>
+        <a href="#">Digital</a>
+        <a href="#">Videos</a>
+        <a href="#">Coding</a>
+      </div>
+      
+      <div id="main">
+        <button class="openbtn" onclick="toggleNav()">真</button>
+      </div>
+
     <div class="bgIMG1">
     </div>
     <section class="section section-light">
@@ -19,11 +31,11 @@
     <div class="bgIMG2">
         <div class="ptext">
             <span class="border">
-                <a class="BUTTON" href="projectMenu.html">DIGITAL ART</a>
+                <a class="BUTTON" href="art.html">DIGITAL ART</a>
             </span>
         </div>
     </div>
-    <section class="section section-dark">
+    <section class="section">
         <h2>Digital Art</h2>
         <p>
             Im Digital-Art-Abschnitt befinden sich einige Artworks und andere Bilder,<br>
@@ -35,15 +47,29 @@
     <div class="bgIMG3">
         <div class="ptext">
             <span class="border">
-                <a class="BUTTON" href="blog.html">Videos</a>
+                <a class="BUTTON" href="videos.html">Videos</a>
             </span>
         </div>
     </div>
-    <section class="section section-dark">
+    <section class="section">
         <h2>Videos</h2>
         <p>
             Hier sind meine Videos zu finden welche ich selber geschnitten habe.<br>
             Im Normalfall sind es Gaming-Videos, da dies meine große Leidenschaft ist.
+        </p>
+    </section>
+
+    <div class="bgIMG4">
+        <div class="ptext">
+            <span class="border">
+                <a class="BUTTON" href="coding.html">Coding</a>
+            </span>
+        </div>
+    </div>
+    <section class="section">
+        <h2>Coding</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam rem vitae saepe eos temporibus asperiores vel nam tenetur! Beatae officiis saepe nemo laudantium odio provident vitae in molestiae ex nam?
         </p>
     </section>
 
@@ -54,6 +80,13 @@
             </span>
         </div>
     </div>
+
+    <script>
+        function toggleNav() {
+            document.getElementById("mySidebar").style.width = document.getElementById("mySidebar").style.width === "250px" ? '0' : '250px';
+            document.getElementById("main").style.marginLeft = document.getElementById("main").style.marginLeft === "250px" ? '0' :  '250px';
+        }       
+    </script>
 
 </body>
 </html>

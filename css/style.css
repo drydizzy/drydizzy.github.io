@@ -9,6 +9,72 @@ body, html{
       
 }
 
+/*Navbar BEGINNING*/
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+  
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+  
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+.openbtn {
+    font-size: 50px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.054);
+    color: white;
+    height: 69px;
+    width: 69px;
+    border: none;
+}
+  
+.openbtn:hover {
+    background-color: #444;
+}
+  
+#main {
+    transition: margin-left .5s;
+    padding: 26px;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+
+
+}
+  
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+/*Navbar END*/
+
 a{
     text-decoration: none;
     color: white;
@@ -19,7 +85,7 @@ a{
     margin-top: 200px;
 }
 
-.bgIMG1, .bgIMG2, .bgIMG3{
+.bgIMG1, .bgIMG2, .bgIMG3, .bgIMG4{
     position:relative;
     background-position: center;
     background-size: cover;
@@ -50,17 +116,14 @@ a{
     min-height: 400px;
 }
 
+.bgIMG4{
+    background-image:url("../media/coding.gif");
+    min-height: 400px;
+}
+
 .section{
     text-align: center;
     padding:50px 80px;
-}
-
-.section-light{
-    background-color: black;
-    color:white;
-}
-
-.section-dark{
     background-color: black;
     color:white;
 }
@@ -83,7 +146,7 @@ a{
 }
 
 @media(max-width:568px){
-    .bgIMG1, .bgIMG2, .bgIMG3{
+    .bgIMG1, .bgIMG2, .bgIMG3, .bgIMG4{
         background-attachment: scroll;
     }
 }
