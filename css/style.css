@@ -108,17 +108,17 @@ a{
 
 .bgIMG2{
     background-image:url("../media/trippyCro.png");
-    min-height: 400px;
+    min-height: 500px;
 }
 
 .bgIMG3{
     background-image:url("../media/videos.jpg");
-    min-height: 400px;
+    min-height: 500px;
 }
 
 .bgIMG4{
     background-image:url("../media/coding.gif");
-    min-height: 400px;
+    min-height: 500px;
 }
 
 .section{
