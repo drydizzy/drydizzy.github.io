@@ -91,10 +91,6 @@ body, html{
     top: 30%;
 }
 
-.grid > *{
-    grid-area: 1 / 1;
-}
-
 #welcome{
     font-family: anurati; 
     text-align: center;
@@ -118,8 +114,9 @@ a{
 }
 
 .bgIMG1{
+    background-image:url("../media/background.png"), url("../media/drydizzy_black.png"), url("../media/backbackground.png");
     height: 100%;
-    background-image:url("../media/background.png");
+    background-attachment: fixed, scroll, fixed;
 }
 .bgIMG2{
     background-image:url("../media/trippyCro.png");
