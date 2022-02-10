@@ -9,12 +9,17 @@ body, html{
       
 }
 
+@font-face {
+    font-family: anurati;
+    src: url(../font/anurati.otf);
+}
+
 /*Navbar BEGINNING*/
 .sidebar {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     top: 0;
     left: 0;
     background-color: #111;
@@ -63,9 +68,7 @@ body, html{
     padding: 26px;
     overflow: hidden;
     position: fixed;
-    z-index: 1;
-
-
+    z-index: 3;
 }
   
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -75,17 +78,37 @@ body, html{
 }
 /*Navbar END*/
 
+#dizzy{
+    font-family: anurati;
+    color: #FFF;
+    font-size: 140px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    z-index: 1;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 350%;
+    top: 30%;
+}
+
+.grid > *{
+    grid-area: 1 / 1;
+}
+
+#welcome{
+    font-family: anurati; 
+    text-align: center;
+    color:#FFF;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
 a{
     text-decoration: none;
     color: white;
 }
 
-#logo{
-    max-width: 90%;
-    margin-top: 200px;
-}
-
-.bgIMG1, .bgIMG2, .bgIMG3, .bgIMG4{
+.bgIMG1, .bgIMG2, .bgIMG3, .bgIMG4, .bgIMG_contact{
     position:relative;
     background-position: center;
     background-size: cover;
@@ -94,18 +117,10 @@ a{
 
 }
 
-.ptext .border:hover{
-    background-color: rgb(0, 0, 0);
-    color: black;
-}
-
 .bgIMG1{
-    background-image:url("../media/firstBG.jpg");
-    min-height: 100%;
-    max-height: 100%;
-    text-align: center;
+    height: 100%;
+    background-image:url("../media/background.png");
 }
-
 .bgIMG2{
     background-image:url("../media/trippyCro.png");
     min-height: 500px;
@@ -121,14 +136,26 @@ a{
     min-height: 500px;
 }
 
+.bgIMG_contact{
+    background-image:url("../media/backbackground.png");
+    min-height: 100%;
+}
+
+.ptext .border:hover{
+    background-color: rgb(0, 0, 0);
+    color: black;
+}
+
 .section{
     text-align: center;
     padding:50px 80px;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color:white;
+    font-size: 20px;
 }
 
 .ptext{
+    font-family: anurati;
     position: absolute;
     top:50%;
     width: 100%;
@@ -146,7 +173,7 @@ a{
 }
 
 @media(max-width:568px){
-    .bgIMG1, .bgIMG2, .bgIMG3, .bgIMG4{
+    .main, .bgIMG_contact, .bgIMG2, .bgIMG3, .bgIMG4{
         background-attachment: scroll;
     }
 }
